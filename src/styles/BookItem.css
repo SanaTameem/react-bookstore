@@ -1,0 +1,24 @@
+.bookItem-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(157, 219, 219);
+}
+
+.icon-complete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  background: none;
+  border: none;
+}
+
+.btns-container {
+  display: flex;
+  gap: 14px;
+}
