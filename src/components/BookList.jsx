@@ -1,15 +1,14 @@
-// components/BookList.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import BookItem from './BookItem';
-import Form from './Form';
+// import Form from './Form';
 
 const BookList = ({ booksData }) => (
   <div className="book-list">
     {booksData.map((book) => (
       <BookItem key={book.id} book={book} />
     ))}
-    <Form />
+    {/* <Form /> */}
   </div>
 );
 BookList.propTypes = {
