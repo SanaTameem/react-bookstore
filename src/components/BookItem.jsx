@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import '../styles/BookItem.css';
+import RemoveBtn from './RemoveBtn';
 
 function BookItem({ book }) {
   return (
@@ -16,7 +17,7 @@ function BookItem({ book }) {
         <div className="btns-container">
           <button type="button" className="btn">Comment</button>
           <button type="button" className="btn">Edit</button>
-          <button type="button" className="btn">Remove</button>
+          <RemoveBtn bookId={book.id} />
         </div>
       </div>
       <div className="icon-complete">
@@ -38,6 +39,7 @@ BookItem.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
   }).isRequired,
 };
 export default BookItem;
