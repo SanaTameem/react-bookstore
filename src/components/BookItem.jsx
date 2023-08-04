@@ -12,29 +12,29 @@ const BookItem = ({
   const dispatch = useDispatch();
   return (
     <div className="bookItem-Container">
-      <div>
+      <div className="btns-info-container">
         <div>
-          <p>{category}</p>
-          <h2>{title}</h2>
-          <p>{author}</p>
+          <p className="category">{category}</p>
+          <h2 className="title">{title}</h2>
+          <p className="author">{author}</p>
         </div>
         <div className="btns-container">
           <button type="button" className="btn">Comment</button>
-          <button type="button" className="btn">Edit</button>
+          <button type="button" className="btn borderd">Edit</button>
           <button type="button" className="btn" onClick={() => dispatch(deleteBook(id))}>Remove</button>
         </div>
       </div>
       <div className="icon-complete">
-        <FontAwesomeIcon icon={faCircleNotch} />
+        <FontAwesomeIcon icon={faCircleNotch} className="complete-circle" />
         <div>
-          <p>65%</p>
-          <p>Completed</p>
+          <p className="percentage">97%</p>
+          <p className="completed-text">Completed</p>
         </div>
       </div>
-      <div>
-        <p>Current Chapter</p>
-        <p>Chapter 17</p>
-        <button type="button">Update Progress</button>
+      <div className="chapter-container">
+        <p className="current-chapter">Current Chapter</p>
+        <p className="lesson">Chapter 17</p>
+        <button type="button" className="update-progress">Update Progress</button>
       </div>
     </div>
   );
