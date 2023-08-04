@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
 import { fetchBooks } from '../redux/books/booksSlice';
+import '../styles/BookList.css';
 
 const BookList = () => {
   const booksData = useSelector((state) => state.book.books);
@@ -12,7 +13,7 @@ const BookList = () => {
 
   return (
     <>
-      <div>
+      <div className="booklist-container">
         {booksData ? booksData.map((item) => (
           <BookItem
             title={item.title}
