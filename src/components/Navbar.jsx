@@ -6,15 +6,15 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="panel-bg">
       <div className="logoItemContainer">
-        <h2>Bookstore CMS</h2>
+        <h2 className="Bookstore-CMS">Bookstore CMS</h2>
         <div className="navItemContainer">
-          <Link to="/">Books</Link>
-          <Link to="/categories">Categories</Link>
+          <Link to="/" className="BOOKS">BOOKS</Link>
+          <Link to="/categories" className="CATEGORIES">CATEGORIES</Link>
         </div>
       </div>
-      <FontAwesomeIcon icon={faUser} />
+      <FontAwesomeIcon icon={faUser} className="user-icon" />
     </nav>
   );
 }
