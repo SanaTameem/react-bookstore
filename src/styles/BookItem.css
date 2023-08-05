@@ -1,24 +1,161 @@
 .bookItem-Container {
+  width: 75rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  background-color: rgb(157, 219, 219);
+  height: 10.625rem;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.btns-info-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.category {
+  height: 1.125rem;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.title {
+  height: 1.813rem;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author {
+  height: 1.188rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.btns-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.btn {
+  width: 3.375rem;
+  height: 1.188rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.borderd {
+  padding: 0 3px;
+  border-right: solid 1px #e8e8e8;
+  border-left: solid 1px #e8e8e8;
 }
 
 .icon-complete {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
-/* .btn {
-  background: none;
-  border: none;
-} */
+.complete-circle {
+  width: 2.625rem;
+  height: 2.62rem;
+  padding: 0.62rem 0.625rem;
+  color: #0290ff;
+}
 
-.btns-container {
-  display: flex;
-  gap: 14px;
+.percentage {
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed-text {
+  width: 5rem;
+  height: 1.125rem;
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.current-chapter {
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.lesson {
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-progress {
+  cursor: pointer;
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  color: #fff;
+}
+
+.chapter-container {
+  border-radius: 4px;
+  border-left: 1px solid #f5f6fa;
 }
